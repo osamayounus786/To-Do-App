@@ -41,4 +41,8 @@ function editToDo(e){
      e.parentNode.firstChild.nodeValue = userInput;
     
 }
+// delete all button
+function deleteAll(){
+    toDoListItem.innerHTML = "";
+}
 
