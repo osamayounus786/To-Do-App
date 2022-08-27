@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    <div class="container">
+        <h1>TODO APP</h1>
         <input type="text" name="" id="todo">
-        <button onclick="addtodo()">Add Item</button>
-        <button onclick="deleteAll()">Delete All</button>
-    </div>
+        <button onclick="addtodo()" class="btn">Add Item</button>
+        <button onclick="deleteAll()" class="btn">Delete All</button>
+    
 
-    <div>
+    <div class="list-container">
         <ul  id="toDoList">
 
         </ul>
     </div>
+</div>
 
 
     <script src="app.js"></script>

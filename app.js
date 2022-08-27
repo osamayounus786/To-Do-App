@@ -10,6 +10,7 @@ var liText = document.createTextNode(toDoitem.value);
 li.appendChild(liText);
 toDoListItem.appendChild(li);
 toDoitem.value = "";
+li.setAttribute('class','list-item')
 
 
 // add a delete button
@@ -18,6 +19,8 @@ var delTxt = document.createTextNode('Delete');
 del.setAttribute("onclick","deletToDo(this)")
 del.appendChild(delTxt);
 li.appendChild(del);
+del.setAttribute("class",'delbtn');
+
 
 // add an edit button
 var editbtn = document.createElement("BUTTON");
@@ -25,6 +28,7 @@ var editTxt = document.createTextNode("Edit");
 editbtn.setAttribute("onclick","editToDo(this)");
 editbtn.appendChild(editTxt);
 li.appendChild(editbtn);
+editbtn.setAttribute("class",'edit-btn');
 
 }
 
